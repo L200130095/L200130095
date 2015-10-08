@@ -8,11 +8,15 @@ Setelah mengikuti matakuliah ini, diharapkan mahasiswa mampu merancang dan membu
 
 ## Referensi:
 
-* [website drupal](http://www.drupal.org)
+* [Website drupal](http://www.drupal.org)
 * Byron A. et. all, USing Drupal second edition, OReilly, 2012 
 * Todd Tomlinson, Beginning Drupal 7, Apress, 2010
 * Todd Tomlinson, Beginning Drupal 8, Apress, 2015
 * Jennifer Hodgdon, Programmer's Guide to Drupal : Principles, Practicles, and pitfalls,Oreilly, 2015
 
 
+##  Contoh website menggnuankan Drupal (Showcase)
+
+* [Drupal Showcase](https://www.drupal.org/case-studies)
+* [Oxford University](http://www.ox.ac.uk/#)
 
