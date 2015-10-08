@@ -77,5 +77,33 @@ Examples:
 
 > Figure 4.2. Page viewed as an anonymous visitor (in Drupal 8).
 
+# Understanding Drupal paths
 
+In Drupal terms, a path is the unique, last part of the URL for a specific function or piece of content. For instance, for a page whose full URL is http://example.com/?q=node/7, the path is node/7. If your site is using clean URLs, the full URL in this example would be http://example.com/node/7; the path would still be node/7. Because URL aliases can completely replace what visitors see as the URL, the paths discussed here (which are still how Drupal decides what content to show) are sometimes called internal paths.
 
+Drupal paths are important because many configuration screens in the Drupal admin area use them. For instance, when you are adding a new item to a menu, you tell Drupal what page the menu item should point to by entering the path to the page.
+
+Here are some examples of paths you might find in a Drupal site:
+
+* node/7
+* taxonomy/term/6
+* admin/content/comment
+* user/login
+* user/3
+
+## How to find Drupal paths
+
+There are several ways to find the path to a particular page on your Drupal site. The first step is to find the URL of the page of interest:
+
+* If you know how to navigate to the page, you can go there and find the URL in your browser's URL bar.
+* You can also hover your mouse over a link to the page (such as in the Views administration screen or the content management screen at Menu > Content (admin/content)), and most browsers will show you the URL in the status section at the bottom of the browser window.
+* In some cases the browser's URL bar or hovering over the link will give you the alias for the page. If you want the internal id (node id or nid) navigating to the page in question and hovering over the edit link (if you have permission to edit that page) will give you the node ID. For example if you are on this page the URL would be /node/31644/edit and the node id is 31644.
+
+The URL you find could have several forms:
+
+* http://example.com/?q=[something] -- In this case, the [something] after ?q= is the path. For example, if the URL is http://example.com/?q=node/7, the path is node/7.
+* http://example.com/[something] or http://example.com/[your Drupal subdirectory]/[something] -- In this case, the [something] after the base path of your Drupal site is the path. For example, your URL could be http://example.com/node/7 or http://example.com/mysubdir/node/7; the path in either case is node/7.
+
+# Duplicate content
+
+The use of the path module can lead to duplicate paths leading to one page. Search engines consider this as duplicate content. The module Global Redirect can prevent problems as a result of duplicate content.
