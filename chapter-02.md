@@ -22,4 +22,16 @@ On the other hand, for certain limited uses, Drupal may not be the best choice:
 With every release, Drupal is becoming easier to use; but like most powerful tools, it will always have a learning curve. Drupal takes time and commitment to learn how to use, and if you or your organization are not prepared to spend some time learning how Drupal works (or if you are not able to hire Drupal expertise), it may not be your best option.
 
 
+## Users, permissions, and roles
+
+Every visitor to your site, whether they have an account and log in or visit the site anonymously, is considered a user to Drupal. Each user has a numeric user ID, and non-anonymous users also have a user name and an email address. Other information can also be associated with users by modules; for instance, if you use the core Profile module, you can define user profile fields to be associated with each user.
+
+Anonymous users have a user ID of zero (0). The user with user ID one (1), which is the user account you create when you install Drupal, is special: that user has permission to do absolutely everything on the site.
+
+Other users on your site can be assigned permissions via roles. To do this, you first need to create a role, which you might call "Content editor" or "Member". Next, you will assign permissions to that role, to tell Drupal what that role can and can't do on the site. Finally, you will grant certain users on your site your new role, which will mean that when those users are logged in, Drupal will let them do the actions you gave that role permission to do.
+
+You can also assign permissions for the special built-in roles of "anonymous user" (a user who is not logged in) and "authenticated user" (a user who is logged in, with no special role assignments). Drupal permissions are quite flexible—you are allowed to assign permission for any task to any role, depending on the needs of your site.
+
+Read more about this topic in The Drupal Cookbook (for beginners).
+
 
