@@ -96,3 +96,53 @@ Menambah bahasa Indnesia dalam drupal
 	3. Aktifkan module   .. Locale & Content Translation
 	4. Masuk ke menu  … 'Configuration'>Languages
 	5. klik menu 'Add Languages'
+
+
+
+	1. Buat sebuah folder dengan nama sama dengan nama theme yang akan di buat, di bawah folder  ../sites/all/themes ..  contoh:  ` [drupal folder]/sites/all/themes/mytheme `  (hindari SPASI dalam memberi nama folder)
+	
+	2. Didalam folder baru tersebut buatlah sebuah file dengan nama ` mytheme.info `  
+	3. Kemudian tuliskan baris-baris data berikut dalam file tersebut
+
+	name = My theme
+	description = Ini theme yang saya buat pertama
+	core = 7.x
+	
+	; sub theme tambah baris berikut 
+	base theme  = zen
+	
+	dengan menggunakan editor teks yang anda punya (NOTEPAD / NOTEPAD++)
+	
+	4. Simpan file
+	5. Selanjutnya dapat dilakukan ujicoba untuk mengaktifkan theme dari menu ` Home > Administrator > Appearance `.
+	6. Pilih theme ' MyTheme ` dan klik menu ` Enable and set default `
+
+Membuat Subtheme dengan menggunakan template theme Zen 
+
+	1. Download template theme Zen dari link berikut  .. http://drupal.org/project/zen .. kemudaian extract dalam folder  sites/all/themes/…
+	2. copy folder sites/all/themes/zen/STATERKIT  dalam folder ` sites/all/themes/myzen `, kemudian lakukan beberapa modifikasi sebagai berikut:
+	
+	
+	
+	3. Dalam folder MyZen terdapat file  STARTERKIT.info.txt , rename menjadi 'myzen.info'.
+	4. Open file ` myzen.info ` dan modifikasi bagian description dengan data berikut ' My Custom Zen sub-theme'.
+	5. Buka file ` template.php ` dan gantikan kata ` STARTERKIT_` dengan ` MyZen_ ` gunakan fungsi replace dalam editor. 
+	6. Ulangi langkah tersebut untuk file ` theme-settings.php  `
+	7. Simpan file. 
+
+TOOL untuk membantu proses pengembangan website dengan drupal
+
+Module devel  "https://www.drupal.org/project/devel"
+
+
+MID SEMESTER:
+
+	1. System requirement
+	2.  Setup & instalasi drupal 
+	3. Fungsi2 utama drupal terkait CMS
+	4. Istilah2 penting dalam drupal
+	5. Ide aplikasi yang sesuai dengan Drupal.
+	
+	
+lihat materi kuliah selengkapnya:
+http://github.com/handaga/drupal
